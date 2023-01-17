@@ -1,0 +1,2 @@
+I have installed Ubuntu 20.04.5
+I am ready to use git and github
