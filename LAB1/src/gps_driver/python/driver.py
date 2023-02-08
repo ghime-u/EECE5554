@@ -51,6 +51,7 @@ def main():
             if data2[5]=='W':
                 long_ddmm=long_ddmm*(-1)
             hdop = float(data2[8])
+            
             altitude = float(data2[9])
 
             utm_cord = utm.from_latlon(lat_ddmm, long_ddmm)
