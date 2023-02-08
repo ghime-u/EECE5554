@@ -58,7 +58,7 @@ def main():
             msg = gps_msg()
             msg.header.stamp.secs = int(utc_sec)
             msg.header.stamp.nsecs = int(utc_nsecs)
-            msg.header.frame_id = "GPS1_Frame"
+            msg.header.frame_id = "GPS1_FRAME"
             msg.HDOP = hdop
             msg.Latitude = lat_ddmm
             msg.Longitude = long_ddmm
