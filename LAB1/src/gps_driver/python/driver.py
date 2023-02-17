@@ -57,9 +57,9 @@ def main():
             utm_cord = utm.from_latlon(lat_ddmm, long_ddmm)
             print(f'UTM_East, UTM_north, Zone, Letter: {utm_cord}')
             msg = gps_msg()
-            msg.header.stamp.secs = int(utc_sec)
-            msg.header.stamp.nsecs = int(utc_nsecs)
-            msg.header.frame_id = "GPS1_FRAME"
+            msg.Header.stamp.secs = int(utc_sec)
+            msg.Header.stamp.nsecs = int(utc_nsecs)
+            msg.Header.frame_id = "GPS1_FRAME"
             msg.HDOP = hdop
             msg.Latitude = lat_ddmm
             msg.Longitude = long_ddmm
