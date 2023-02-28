@@ -13,14 +13,11 @@ def percentage_in_range(data, low, high):
     return 100 * count / len(data)
 
 
-stri = "TBD"
+stri = "Data/open/stationary/open_stationary.bag"
 raw =  bagpy.bagreader(stri)
 raw.topic_table
 data = raw.message_by_topic('/gps')
-"""
-change topic to /gps for Occluded_walking
-change topic to /gps/gps for open walk, occluded stationary,
-"""
+
 print(data)
 data_in_csv = pd.read_csv(data)
 x = data_in_csv['UTM_easting']
