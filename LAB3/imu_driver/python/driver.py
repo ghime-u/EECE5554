@@ -69,7 +69,7 @@ def driver():
             #msg.header.stamp = rospy.Time.from_sec(current_time)
             msg.header.stamp.secs = int(current_time.secs)
             msg.header.stamp.nsecs = int(current_time.nsecs)
-            msg.header.frame_id = 'IMU1_Frame'
+            msg.header.frame_id = 'imu1_Frame'
             msg.IMU.orientation.x = result[0]
             msg.IMU.orientation.y = result[1]
             msg.IMU.orientation.z = result[2]
@@ -80,9 +80,9 @@ def driver():
             msg.IMU.angular_velocity.x = gyroX
             msg.IMU.angular_velocity.y = gyroY
             msg.IMU.angular_velocity.z = gyroZ
-            msg.MagField.magnetic_field.x = magX
-            msg.MagField.magnetic_field.y = magY
-            msg.MagField.magnetic_field.z = magZ
+            msg.mag_field.magnetic_field.x = magX
+            msg.mag_field.magnetic_field.y = magY
+            msg.mag_field.magnetic_field.z = magZ
             msg.VNYMR = recieve
             rospy.loginfo(msg)
             pub.publish(msg)
