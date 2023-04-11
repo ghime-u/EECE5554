@@ -1,0 +1,6 @@
+Header Header
+sensor_msgs/Imu imu
+sensor_msgs/MagneticField magField
+float64 yaw
+float64 pitch
+float64 roll
