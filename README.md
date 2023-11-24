@@ -31,10 +31,9 @@ A high-quality panorama of a Cinder wall was created using seven images with var
 
 Open your terminal or command prompt and run the following command to clone the repository:
 
-\`\`\`bash
+```bash
 git clone https://github.com/ghime-u/EECE5554.git
 cd path/to/EECE5554
-\`\`\`
 
 ### Instructions
 
